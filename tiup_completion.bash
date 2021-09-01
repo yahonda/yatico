@@ -22,6 +22,9 @@ _tiup()
         br)
           COMPREPLY=($(compgen -W "backup help restore" -- $cur) )
           ;;
+        bench)
+          COMPREPLY=($(compgen -W "help tpcc tpch ycsb" -- $cur) )
+          ;;
       esac
       ;;
     3)
