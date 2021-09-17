@@ -25,6 +25,9 @@ _tiup()
         bench)
           COMPREPLY=($(compgen -W "help tpcc tpch ycsb" -- $cur) )
           ;;
+        install)
+          COMPREPLY=($(compgen -W "bench br cdc client cluster ctl dm dmctl errdoc pd-recover playground tidb tidb-lightning" -- $cur) )
+          ;;
       esac
       ;;
     3)
